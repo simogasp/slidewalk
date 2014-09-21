@@ -5,13 +5,14 @@
 #-------------------------------------------------
 
 QT       += core gui opengl
+qtHaveModule(printsupport): QT += printsupport
 
 TARGET = slidewalk
 TEMPLATE = app
 
 
-INCLUDEPATH += /usr/include/openslide
-LIBS += -lopenslide
+INCLUDEPATH += /usr/local/include/openslide
+LIBS += -L/usr/local/lib -lopenslide
 
 
 SOURCES += main.cpp\
@@ -24,3 +25,6 @@ HEADERS  += mainbox.hpp \
     zoomgraphicsview.hpp
 
 FORMS    += mainbox.ui
+
+OTHER_FILES += \
+    CMakeLists.txt

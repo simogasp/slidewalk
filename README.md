@@ -1,9 +1,26 @@
-slidewalk
+Slidewalk
 =========
 
-A little QT app to test Openslide library (see openslide.org)
+A little `Qt` app to test OpenSlide library (see [openslide.org](openslide.org)) by [alexkh](https://github.com/alexkh)
 
-License: GPL
+Ported on ``CMake` with `Qt5` by [Simone Gasparini](https://github.com/simogasp)
+
+--------
+Building
+--------
+
+See [BUILD](BUILD.md) text file
+
+-------
+License
+-------
+
+See [LICENSE](LICENSE) text file
+
+
+-------
+Original build comment
+-------
 
 This application depends heavily on Openslide, which has to be installed first.
 openslide.h and openslide-features.h need to be in your include path for
