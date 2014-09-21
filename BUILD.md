@@ -55,6 +55,7 @@ cmake .. -DOpenSlide_DIR=C:/your/path/to/openslide-win64-20140125 -DCMAKE_PREFIX
 For Mac OSX, you also need to specify the location of the different cmake files for Qt5:
 ```shell
 cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt5/5.3.0/lib/cmake
+```
 
 More in general, use ``-DOpenSlide_DIR`` to point to the base path of the library if it is not installed in a system folder.
 
