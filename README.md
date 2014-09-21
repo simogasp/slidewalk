@@ -1,9 +1,9 @@
 Slidewalk
 =========
 
-A little `Qt` app to test OpenSlide library (see [openslide.org](openslide.org)) by [alexkh](https://github.com/alexkh)
+A little `Qt` app to test OpenSlide library (see [openslide.org](openslide.org)) developed for `Qt4` by [alexkh](https://github.com/alexkh)
 
-Ported on `CMake` with `Qt5` by [Simone Gasparini](https://github.com/simogasp)
+Forked and ported on `CMake` with `Qt5` by [Simone Gasparini](https://github.com/simogasp)
 
 --------
 Building
