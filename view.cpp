@@ -4,6 +4,10 @@
 #ifndef QT_NO_OPENGL
 #include <QtOpenGL>
 #endif
+#ifndef QT_NO_PRINTER
+#include <QPrinter>
+#include <QPrintDialog>
+#endif
 
 #include <qmath.h>
 #include <QDebug>

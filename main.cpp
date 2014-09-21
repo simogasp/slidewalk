@@ -1,5 +1,5 @@
 #include <csignal>
-#include <QtGui/QApplication>
+#include <QApplication>
 #include <QTextCodec>
 #include "mainbox.hpp"
 
@@ -19,7 +19,9 @@ int main(int argc, char *argv[]) {
 	QCoreApplication::setApplicationName("SlideWalk");
 	QCoreApplication::setApplicationVersion("0.1");
 	QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
+#if QT_VERSION < 0x050000
 	QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
+#endif
 
 	CleanExit cleanExit;
 	QApplication a(argc, argv);
