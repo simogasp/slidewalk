@@ -54,14 +54,13 @@ set(CMAKE_AUTOMOC ON)
 # Add compiler flags for building executables (-fPIE)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS} ${Qt5OpenGL_EXECUTABLE_COMPILE_FLAGS} ${Qt5PrintSupport_EXECUTABLE_COMPILE_FLAGS}")
 
+
+
 #########################################################
 # MAIN PROJECT
 #########################################################
 
-qt5_wrap_ui(UI_HEADERS mainbox.ui)
+#put all the binaries in bin
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
-# Tell CMake to create the  executable
-add_executable(slidewalk main.cpp mainbox.cpp view.cpp zoomgraphicsview.cpp ${UI_HEADERS})
-
-#Link the executable to the Qt 5 widgets library.
-target_link_libraries(slidewalk Qt5::Widgets Qt5::OpenGL Qt5::PrintSupport ${OpenSlide_LIBS} )
+add_subdirectory(src)
